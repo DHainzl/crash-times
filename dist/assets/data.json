@@ -1,0 +1,68 @@
+{
+    "gameinfo": {
+        "crash-1": {
+            "title": "Crash Bandicoot",
+            "sections": {
+                "island-1": {
+                    "title": "First Island",
+                    "levels": {
+                        "n-sanity-beach": { "title": "N. Sanity Beach" },
+                        "jungle-rollers": { "title": "Jungle Rollers" },
+                        "the-great-gate": { "title": "The Great Gate" },
+                        "boulders": { "title": "Boulders" },
+                        "upstream": { "title": "Upstream" },
+                        "rolling-stones": { "title": "Rolling Stones" },
+                        "hog-wild": { "title": "Hog Wild" },
+                        "native-fortress": { "title": "Native Fortress" }
+                    }
+                }
+            }
+        }
+    },
+    "times": {
+        "crash-1": {
+            "island-1": {
+                "n-sanity-beach": {
+                    "sapphire": "0:34:00",
+                    "gold": "0:28:26",
+                    "platinum": "0:25:76"
+                },
+                "jungle-rollers": {
+                    "sapphire": "1:03:00",
+                    "gold": "0:48:12",
+                    "platinum": "0:46:89"
+                },
+                "the-great-gate": {
+                    "sapphire": "1:05:00",
+                    "gold": "0:53:29",
+                    "platinum": "0:48:07"
+                },
+                "boulders": {
+                    "sapphire": "1:04:00",
+                    "gold": "0:49:44",
+                    "platinum": "0:47:48"
+                },
+                "upstream": {
+                    "sapphire": "1:03:00",
+                    "gold": "0:49:95",
+                    "platinum": "0:46:51"
+                },
+                "rolling-stones": {
+                    "sapphire": "1:04:00",
+                    "gold": "0:50:35",
+                    "platinum": "0:46:49"
+                },
+                "hog-wild": {
+                    "sapphire": "0:55:00",
+                    "gold": "0:47:53",
+                    "platinum": "0:43:42"
+                },
+                "native-fortress": {
+                    "sapphire": "2:55:00",
+                    "gold": "2:25:87",
+                    "platinum": "2:05:80"
+                }
+            }
+        }
+    }
+}
