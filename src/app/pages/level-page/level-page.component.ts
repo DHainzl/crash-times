@@ -20,6 +20,8 @@ export class LevelPageComponent implements OnInit {
     game: CrashDataGameInfo;
     section: CrashDataSectionInfo;
     level: CrashDataLevelInfo;
+    previousLevel: CrashDataLevelInfo;
+    nextLevel: CrashDataLevelInfo;
     times: CrashDataTimes;
 
     error: string;
@@ -37,6 +39,8 @@ export class LevelPageComponent implements OnInit {
             this.game = undefined;
             this.section = undefined;
             this.level = undefined;
+            this.previousLevel = undefined;
+            this.nextLevel = undefined;
             this.times = undefined;
 
             this.loadGameData();
@@ -61,6 +65,8 @@ export class LevelPageComponent implements OnInit {
             }
         });
 
+        this.determinePreviousAndNextLevels(game);
+
         if (this.level === undefined) {
             this.error = 'Cannot find level with id ' + this.levelId + ' in game ' + game.title;
         }
@@ -69,7 +75,19 @@ export class LevelPageComponent implements OnInit {
         this.times = crashData.times[this.game.gameId][this.section.sectionId][this.level.levelId];
     }
 
-    flatten<T>(arr: T[][]): T[] {
+    private flatten<T>(arr: T[][]): T[] {
         return arr.reduce((a, b) => a.concat(b), []);
+    }
+
+    private determinePreviousAndNextLevels(game: CrashDataGameInfo) {
+        const allLevels = this.flatten(game.sections.map(section => section.levels));
+        const levelIdx = allLevels.findIndex(levelInfo => levelInfo.levelId === this.levelId);
+
+        if (levelIdx !== 0) {
+            this.previousLevel = allLevels[levelIdx - 1];
+        }
+        if (levelIdx !== allLevels.length - 1) {
+            this.nextLevel = allLevels[levelIdx + 1];
+        }
     }
 }

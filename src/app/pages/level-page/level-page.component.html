@@ -9,5 +9,14 @@
         <li>Gold: {{times.gold}}</li>
         <li>Platinum: {{times.platinum}}</li>
     </ul>
+
+    <div>
+        <span *ngIf="previousLevel">
+            <a routerLink="/{{game.gameId}}/{{previousLevel.levelId}}">&lt;&lt; {{previousLevel.title}}</a>
+        </span>
+        <span *ngIf="nextLevel">
+            <a routerLink="/{{game.gameId}}/{{nextLevel.levelId}}">{{nextLevel.title}} &gt;&gt;</a>
+        </span>
+    </div>
 </div>
 <ng-template #error_content>{{error}}</ng-template>
