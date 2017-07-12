@@ -67,6 +67,10 @@
                             "title": "Boulder Dash"
                         },
                         {
+                            "levelId": "whole-hog",
+                            "title": "Whole Hog"
+                        },
+                        {
                             "levelId": "sunset-vista",
                             "title": "Sunset Vista"
                         }
@@ -103,6 +107,10 @@
                         {
                             "levelId": "lights-out",
                             "title": "Lights Out"
+                        },
+                        {
+                            "levelId": "fumbling-in-the-dark",
+                            "title": "Fumbling In The Dark"
                         },
                         {
                             "levelId": "jaws-of-darkness",
@@ -310,7 +318,7 @@
                         },
                         {
                             "levelId": "hang-em-high",
-                            "title": "Hang 'Em High"
+                            "title": "Hang' Em High"
                         },
                         {
                             "levelId": "hog-ride",
@@ -503,15 +511,15 @@
                     "gold": "1:24:61",
                     "platinum": "1:18:08"
                 },
-                "sunset-vista": {
-                    "sapphire": "5:30:00",
-                    "gold": "4:10:04",
-                    "platinum": "3:41:85"
-                },
                 "whole-hog": {
                     "sapphire": "0:48:00",
                     "gold": "0:30:44",
                     "platinum": "0:26:87"
+                },
+                "sunset-vista": {
+                    "sapphire": "5:30:00",
+                    "gold": "4:10:04",
+                    "platinum": "3:41:85"
                 }
             },
             "island-3": {
@@ -550,6 +558,11 @@
                     "gold": "1:20:67",
                     "platinum": "1:06:87"
                 },
+                "fumbling-in-the-dark": {
+                    "sapphire": "2:28:00",
+                    "gold": "1:57:68",
+                    "platinum": "1:41:59"
+                },
                 "jaws-of-darkness": {
                     "sapphire": "2:21:00",
                     "gold": "1:59:21",
@@ -564,11 +577,6 @@
                     "sapphire": "1:20:00",
                     "gold": "0:56:22",
                     "platinum": "0:44:92"
-                },
-                "fumbling-in-the-dark": {
-                    "sapphire": "2:28:00",
-                    "gold": "1:57:68",
-                    "platinum": "1:41:59"
                 }
             }
         },
@@ -629,7 +637,7 @@
             },
             "warp-room-3": {
                 "plant-food": {
-                    "sapphire": "1:03:31",
+                    "sapphire": "1:59:00",
                     "gold": "1:03:31",
                     "platinum": "0:57:28"
                 },
