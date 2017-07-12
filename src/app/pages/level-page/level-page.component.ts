@@ -17,12 +17,12 @@ import {
 export class LevelPageComponent implements OnInit {
     private gameId: string;
     private levelId: string;
-    private game: CrashDataGameInfo;
-    private section: CrashDataSectionInfo;
-    private level: CrashDataLevelInfo;
-    private times: CrashDataTimes;
+    game: CrashDataGameInfo;
+    section: CrashDataSectionInfo;
+    level: CrashDataLevelInfo;
+    times: CrashDataTimes;
 
-    private error: string;
+    error: string;
 
     constructor(
         private router: Router,

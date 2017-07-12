@@ -10,7 +10,7 @@ import { CrashData, CrashDataGameInfo } from 'app/core/services/crash-data/inter
     styleUrls: [ './game-selector.component.scss' ]
 })
 export class GameSelectorComponent implements OnInit {
-    private games: CrashDataGameInfo[] = [];
+    games: CrashDataGameInfo[] = [];
 
     constructor(
         private router: Router,

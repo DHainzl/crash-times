@@ -12,7 +12,7 @@ export class LevelSelectorComponent implements OnInit {
     private gameId: string;
     private game: CrashDataGameInfo;
 
-    private error: string;
+    error: string;
 
     constructor(
         private router: Router,
@@ -34,7 +34,6 @@ export class LevelSelectorComponent implements OnInit {
             this.error = 'Cannot find game with id ' + this.gameId;
             return;
         }
-
         this.game = game;
     }
 
