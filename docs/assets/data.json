@@ -41,6 +41,82 @@
                             "title": "Native Fortress"
                         }
                     ]
+                },
+                {
+                    "sectionId": "island-2",
+                    "title": "Second Island",
+                    "levels": [
+                        {
+                            "levelId": "up-the-creek",
+                            "title": "Up The Creek"
+                        },
+                        {
+                            "levelId": "the-lost-city",
+                            "title": "The Lost City"
+                        },
+                        {
+                            "levelId": "temple-ruins",
+                            "title": "Temple Ruins"
+                        },
+                        {
+                            "levelId": "road-to-nowhere",
+                            "title": "Road To Nowhere"
+                        },
+                        {
+                            "levelId": "boulder-dash",
+                            "title": "Boulder Dash"
+                        },
+                        {
+                            "levelId": "sunset-vista",
+                            "title": "Sunset Vista"
+                        }
+                    ]
+                },
+                {
+                    "sectionId": "island-3",
+                    "title": "Third Island",
+                    "levels": [
+                        {
+                            "levelId": "heavy-machinery",
+                            "title": "Heavy Machinery"
+                        },
+                        {
+                            "levelId": "cortex-power",
+                            "title": "Cortex Power"
+                        },
+                        {
+                            "levelId": "generator-room",
+                            "title": "Generator Room"
+                        },
+                        {
+                            "levelId": "toxic-waste",
+                            "title": "Toxic Waste"
+                        },
+                        {
+                            "levelId": "the-high-road",
+                            "title": "The High Road"
+                        },
+                        {
+                            "levelId": "slippery-climb",
+                            "title": "Slippery Climb"
+                        },
+                        {
+                            "levelId": "lights-out",
+                            "title": "Lights Out"
+                        },
+                        {
+                            "levelId": "jaws-of-darkness",
+                            "title": "Jaws Of Darkness"
+                        },
+                        {
+                            "levelId": "castle-machinery",
+                            "title": "Castle Machinery"
+                        },
+                        {
+                            "levelId": "the-lab",
+                            "title": "The Lab"
+                        }
+                    ]
                 }
             ]
         }
@@ -87,6 +163,100 @@
                     "sapphire": "2:55:00",
                     "gold": "2:25:87",
                     "platinum": "2:05:80"
+                }
+            },
+            "island-2": {
+                "up-the-creek": {
+                    "sapphire": "1:42:00",
+                    "gold": "1:20:35",
+                    "platinum": "1:16:31"
+                },
+                "the-lost-city": {
+                    "sapphire": "2:35:00",
+                    "gold": "1:56:12",
+                    "platinum": "1:40:31"
+                },
+                "temple-ruins": {
+                    "sapphire": "2:11:00",
+                    "gold": "1:32:61",
+                    "platinum": "1:25:34"
+                },
+                "road-to-nowhere": {
+                    "sapphire": "1:24:00",
+                    "gold": "1:03:26",
+                    "platinum": "0:57:85"
+                },
+                "boulder-dash": {
+                    "sapphire": "1:45:00",
+                    "gold": "1:24:61",
+                    "platinum": "1:18:08"
+                },
+                "sunset-vista": {
+                    "sapphire": "5:30:00",
+                    "gold": "4:10:04",
+                    "platinum": "3:41:85"
+                },
+                "whole-hog": {
+                    "sapphire": "0:48:00",
+                    "gold": "0:30:44",
+                    "platinum": "0:26:87"
+                }
+            },
+            "island-3": {
+                "heavy-machinery": {
+                    "sapphire": "2:20:00",
+                    "gold": "1:57:52",
+                    "platinum": "1:36:29"
+                },
+                "cortex-power": {
+                    "sapphire": "1:05:00",
+                    "gold": "0:43:93",
+                    "platinum": "0:39:70"
+                },
+                "generator-room": {
+                    "sapphire": "1:22:00",
+                    "gold": "1:08:37",
+                    "platinum": "0:59:72"
+                },
+                "toxic-waste": {
+                    "sapphire": "1:16:00",
+                    "gold": "1:03:47",
+                    "platinum": "0:55:75"
+                },
+                "the-high-road": {
+                    "sapphire": "1:28:00",
+                    "gold": "1:13:29",
+                    "platinum": "1:04:61"
+                },
+                "slippery-climb": {
+                    "sapphire": "3:30:00",
+                    "gold": "3:00:47",
+                    "platinum": "2:26:08"
+                },
+                "lights-out": {
+                    "sapphire": "1:31:00",
+                    "gold": "1:20:67",
+                    "platinum": "1:06:87"
+                },
+                "jaws-of-darkness": {
+                    "sapphire": "2:21:00",
+                    "gold": "1:59:21",
+                    "platinum": "1:36:26"
+                },
+                "castle-machinery": {
+                    "sapphire": "3:15:00",
+                    "gold": "2:37:61",
+                    "platinum": "2:09:89"
+                },
+                "the-lab": {
+                    "sapphire": "1:20:00",
+                    "gold": "0:56:22",
+                    "platinum": "0:44:92"
+                },
+                "fumbling-in-the-dark": {
+                    "sapphire": "2:28:00",
+                    "gold": "1:57:68",
+                    "platinum": "1:41:59"
                 }
             }
         }
