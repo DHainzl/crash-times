@@ -3,10 +3,12 @@ import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 // Services
+import { CrashDataService } from 'app/core/services/crash-data/crash-data.service';
 
 // Guards
 
 // Resolvers
+import { CrashDataResolverService } from 'app/core/resolvers/crash-data-resolver.service';
 
 @NgModule({
     imports: [
@@ -17,10 +19,12 @@ import { CommonModule } from '@angular/common';
     exports: [],
     providers: [
         // Services
+        CrashDataService,
 
         // Guards
 
         // Resolvers
+        CrashDataResolverService,
     ]
 })
 export class CoreModule {

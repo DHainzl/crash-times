@@ -1,0 +1,15 @@
+<div>
+    <a routerLink="/">Back to games</a>
+</div>
+
+<div *ngIf="!error;else error_content">
+    <div class="game-section" *ngFor="let section of game.sections">
+        <h3>{{section.title}}</h3>
+        <ul *ngFor="let level of section.levels">
+            <li>
+                <a (click)="navigateTo(level.levelId)">{{level.title}}</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<ng-template #error_content>{{error}}</ng-template>

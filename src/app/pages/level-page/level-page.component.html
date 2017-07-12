@@ -1,0 +1,13 @@
+<div>
+    <a routerLink="/{{game.gameId}}">Back to {{game.title}}</a>
+</div>
+
+<div *ngIf="!error;else error_content">
+    <h3>{{level.title}}</h3>
+    <ul>
+        <li>Sapphire: {{times.sapphire}}</li>
+        <li>Gold: {{times.gold}}</li>
+        <li>Platinum: {{times.platinum}}</li>
+    </ul>
+</div>
+<ng-template #error_content>{{error}}</ng-template>

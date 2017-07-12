@@ -1,24 +1,50 @@
 {
-    "gameinfo": {
-        "crash-1": {
+    "gameinfo": [
+        {
+            "gameId": "crash-1",
             "title": "Crash Bandicoot",
-            "sections": {
-                "island-1": {
+            "sections": [
+                {
+                    "sectionId": "island-1",
                     "title": "First Island",
-                    "levels": {
-                        "n-sanity-beach": { "title": "N. Sanity Beach" },
-                        "jungle-rollers": { "title": "Jungle Rollers" },
-                        "the-great-gate": { "title": "The Great Gate" },
-                        "boulders": { "title": "Boulders" },
-                        "upstream": { "title": "Upstream" },
-                        "rolling-stones": { "title": "Rolling Stones" },
-                        "hog-wild": { "title": "Hog Wild" },
-                        "native-fortress": { "title": "Native Fortress" }
-                    }
+                    "levels": [
+                        {
+                            "levelId": "n-sanity-beach",
+                            "title": "N. Sanity Beach"
+                        },
+                        {
+                            "levelId": "jungle-rollers",
+                            "title": "Jungle Rollers"
+                        },
+                        {
+                            "levelId": "the-great-gate",
+                            "title": "The Great Gate"
+                        },
+                        {
+                            "levelId": "boulders",
+                            "title": "Boulders"
+                        },
+                        {
+                            "levelId": "upstream",
+                            "title": "Upstream"
+                        },
+                        {
+                            "levelId": "rolling-stones",
+                            "title": "Rolling Stones"
+                        },
+                        {
+                            "levelId": "hog-wild",
+                            "title": "Hog Wild"
+                        },
+                        {
+                            "levelId": "native-fortress",
+                            "title": "Native Fortress"
+                        }
+                    ]
                 }
-            }
+            ]
         }
-    },
+    ],
     "times": {
         "crash-1": {
             "island-1": {
