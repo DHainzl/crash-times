@@ -1,0 +1,16 @@
+.toolbar-filler {
+    flex: 1;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .page-content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        height: 100%;
+    }
+}

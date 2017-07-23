@@ -1,0 +1,18 @@
+<md-sidenav-container>
+    <md-sidenav mode="side" opened="true">
+        <nav>
+            <ul>
+                <li *ngFor="let game of games">
+                    <a [routerLink]="[ '/games', game.gameId ]" routerLinkActive="active" class="game game-{{game.gameId}}">
+                        <span class="game-title">{{game.title}}</span>
+                        <span class="game-subtitle" *ngIf="game.subtitle">{{game.subtitle}}</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </md-sidenav>
+
+    <div class="game-content">
+        <router-outlet></router-outlet>
+    </div>
+</md-sidenav-container>

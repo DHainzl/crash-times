@@ -1,6 +1,7 @@
 import { RouterModule } from '@angular/router';
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Services
 import { CrashDataService } from 'app/core/services/crash-data/crash-data.service';
@@ -14,6 +15,7 @@ import { CrashDataResolverService } from 'app/core/resolvers/crash-data-resolver
     imports: [
         CommonModule,
         RouterModule,
+        BrowserAnimationsModule,
     ],
     declarations: [],
     exports: [],

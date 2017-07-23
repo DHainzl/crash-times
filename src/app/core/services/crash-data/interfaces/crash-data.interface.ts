@@ -12,6 +12,7 @@ export interface CrashData {
 export interface CrashDataGameInfo {
     gameId: string;
     title: string;
+    subtitle?: string;
     sections: CrashDataSectionInfo[];
 }
 

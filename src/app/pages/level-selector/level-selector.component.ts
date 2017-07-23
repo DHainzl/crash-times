@@ -27,7 +27,7 @@ export class LevelSelectorComponent implements OnInit {
     }
 
     loadGameData() {
-        const crashData: CrashData = this.route.snapshot.data['crashData'];
+        const crashData: CrashData = this.route.parent.parent.snapshot.data['crashData'];
         const game = crashData.gameinfo.find(gameinfo => gameinfo.gameId === this.gameId);
 
         if (game === undefined) {
@@ -38,6 +38,6 @@ export class LevelSelectorComponent implements OnInit {
     }
 
     navigateTo(levelId: string) {
-        this.router.navigate([this.gameId, levelId]);
+        this.router.navigate(['games', this.gameId, levelId]);
     }
 }

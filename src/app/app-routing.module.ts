@@ -3,25 +3,37 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { CrashDataResolverService } from 'app/core/resolvers/crash-data-resolver.service';
 
-import { GameSelectorComponent } from 'app/pages/game-selector/game-selector.component';
+import { RootPageComponent } from 'app/pages/root-page/root-page.component';
 import { LevelSelectorComponent } from 'app/pages/level-selector/level-selector.component';
 import { LevelPageComponent } from 'app/pages/level-page/level-page.component';
+import { AboutPageComponent } from 'app/pages/about-page/about-page.component';
 
 const routes: Routes = [
     {
         path: '',
+        redirectTo: 'games/crash-1',
+        pathMatch: 'full',
+    },
+    {
+        path: '',
+        component: RootPageComponent,
         children: [
             {
-                path: '',
-                component: GameSelectorComponent,
+                path: 'games',
+                children: [
+                    {
+                        path: ':gameId',
+                        component: LevelSelectorComponent,
+                    },
+                    {
+                        path: ':gameId/:levelId',
+                        component: LevelPageComponent,
+                    }
+                ]
             },
             {
-                path: ':gameId',
-                component: LevelSelectorComponent,
-            },
-            {
-                path: ':gameId/:levelId',
-                component: LevelPageComponent,
+                path: 'about',
+                component: AboutPageComponent,
             }
         ],
         resolve: {

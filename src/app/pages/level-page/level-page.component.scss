@@ -1,0 +1,52 @@
+.arrow {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    padding: 0 30px;
+    font-size: 30px;
+    width: 50%;
+    height: 100%;
+
+    color: rgba(0,0,0,.87);
+
+    &:hover {
+        text-decoration: none;
+
+        > span.label {
+            .label-appear {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    }
+
+    &.arrow-left {
+        text-align: left;
+        left: 0;
+    }
+    &.arrow-right {
+        text-align: right;
+        right: 0;
+    }
+
+    > span.label {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .label-appear {
+            display: inline-block;
+            font-size: 19px;
+            position: relative;
+            top: -2px;
+            transform: translateY(-100%);
+            opacity: 0;
+
+            transition: all .3s ease-in-out;
+        }
+    }
+}
+
+md-card-subtitle a {
+    color: inherit;
+}

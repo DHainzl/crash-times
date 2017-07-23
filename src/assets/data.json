@@ -123,6 +123,10 @@
                         {
                             "levelId": "the-lab",
                             "title": "The Lab"
+                        },
+                        {
+                            "levelId": "stormy-ascent",
+                            "title": "Stormy Ascent"
                         }
                     ]
                 }
@@ -130,7 +134,8 @@
         },
         {
             "gameId": "crash-2",
-            "title": "Crash Bandicoot 2: Cortex Strikes Back",
+            "title": "Crash Bandicoot 2",
+            "subtitle": "Cortex Strikes Back",
             "sections": [
                 {
                     "sectionId": "warp-room-1",
@@ -280,7 +285,8 @@
         },
         {
             "gameId": "crash-3",
-            "title": "Crash Bandicoot 3: Warped!",
+            "title": "Crash Bandicoot 3",
+            "subtitle": "Warped!",
             "sections": [
                 {
                     "sectionId": "warp-room-1",
@@ -577,6 +583,11 @@
                     "sapphire": "1:20:00",
                     "gold": "0:56:22",
                     "platinum": "0:44:92"
+                },
+                "stormy-ascent": {
+                    "sapphire": "7:00:00",
+                    "gold": "4:30:00",
+                    "platinum": "3:10:00"
                 }
             }
         },

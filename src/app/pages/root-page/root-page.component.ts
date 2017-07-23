@@ -5,11 +5,11 @@ import { CrashData, CrashDataGameInfo } from 'app/core/services/crash-data/inter
 
 
 @Component({
-    selector: 'app-game-selector',
-    templateUrl: './game-selector.component.html',
-    styleUrls: [ './game-selector.component.scss' ]
+    selector: 'app-root-page',
+    templateUrl: './root-page.component.html',
+    styleUrls: [ './root-page.component.scss' ]
 })
-export class GameSelectorComponent implements OnInit {
+export class RootPageComponent implements OnInit {
     games: CrashDataGameInfo[] = [];
 
     constructor(
@@ -23,6 +23,6 @@ export class GameSelectorComponent implements OnInit {
     }
 
     navigateTo(gameId: string) {
-        this.router.navigate([gameId]);
+        this.router.navigate(['games', gameId]);
     }
 }

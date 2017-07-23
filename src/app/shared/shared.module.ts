@@ -3,6 +3,13 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
+import {
+    MdButtonModule,
+    MdToolbarModule,
+    MdSidenavModule,
+    MdCardModule,
+} from '@angular/material'
+
 // Components
 
 // Pipes
@@ -13,7 +20,13 @@ import { FormsModule } from '@angular/forms';
     imports: [
         CommonModule,
         RouterModule,
-        FormsModule
+        FormsModule,
+
+        // NgMaterial
+        MdButtonModule,
+        MdToolbarModule,
+        MdSidenavModule,
+        MdCardModule,
     ],
     declarations: [
         // Components
@@ -31,7 +44,13 @@ import { FormsModule } from '@angular/forms';
 
         // Re-Export Common modules
         CommonModule,
-        FormsModule
+        FormsModule,
+
+        // NgMaterial
+        MdButtonModule,
+        MdToolbarModule,
+        MdSidenavModule,
+        MdCardModule,
     ]
 })
 export class SharedModule {}

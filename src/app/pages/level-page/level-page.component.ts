@@ -12,7 +12,7 @@ import {
 @Component({
     selector: 'app-level-page',
     templateUrl: './level-page.component.html',
-    styleUrls: [ './level-page.component.scss' ]
+    styleUrls: [ './level-page.component.scss' ],
 })
 export class LevelPageComponent implements OnInit {
     private gameId: string;
@@ -49,7 +49,7 @@ export class LevelPageComponent implements OnInit {
 
     loadGameData() {
         this.level = undefined;
-        const crashData: CrashData = this.route.snapshot.data['crashData'];
+        const crashData: CrashData = this.route.parent.parent.snapshot.data['crashData'];
         const game = crashData.gameinfo.find(gameinfo => gameinfo.gameId === this.gameId);
 
         if (game === undefined) {
