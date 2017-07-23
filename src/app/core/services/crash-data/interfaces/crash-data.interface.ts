@@ -31,4 +31,5 @@ export interface CrashDataTimes {
     sapphire: string;
     gold: string;
     platinum: string;
+    note?: string;
 }

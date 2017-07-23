@@ -804,7 +804,8 @@
                 "eggipus-rex": {
                     "sapphire": "0:55:00",
                     "gold": "0:50:00",
-                    "platinum": "0:44:80"
+                    "platinum": "0:44:80",
+                    "note": "Times taken from the original game and might be incorrect."
                 },
                 "deep-trouble": {
                     "sapphire": "1:37:00",
@@ -824,7 +825,8 @@
                 "hot-coco": {
                     "sapphire": "1:00:00",
                     "gold": "0:30:08",
-                    "platinum": "0:19:96"
+                    "platinum": "0:19:96",
+                    "note": "Times taken from the original game and might be incorrect."
                 },
                 "double-header": {
                     "sapphire": "1:27:00",
