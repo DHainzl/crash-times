@@ -2,12 +2,14 @@
     box-sizing: border-box;
     position: absolute;
     top: 0;
-    padding: 0 30px;
     font-size: 30px;
     width: 50%;
     height: 100%;
 
     color: rgba(0,0,0,.87);
+    z-index: 1;
+
+    white-space: nowrap;
 
     &:hover {
         text-decoration: none;
@@ -23,10 +25,22 @@
     &.arrow-left {
         text-align: left;
         left: 0;
+
+        > span.label {
+            .label-appear {
+                left: 24px;
+            }
+        }
     }
     &.arrow-right {
         text-align: right;
         right: 0;
+
+        > span.label {
+            .label-appear {
+                right: 100%;
+            }
+        }
     }
 
     > span.label {
@@ -37,8 +51,8 @@
         .label-appear {
             display: inline-block;
             font-size: 19px;
-            position: relative;
-            top: -7px;
+            position: absolute;
+            top: 5px;
             transform: translateY(-100%);
             opacity: 0;
 
