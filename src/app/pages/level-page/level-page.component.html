@@ -2,14 +2,14 @@
 <div *ngIf="!error;else error_content">
     <a class="arrow arrow-left" *ngIf="previousLevel" [routerLink]="[ '/games', game.gameId, previousLevel.levelId ]">
         <span class="label">
-            &lt;
+            <md-icon>chevron_left</md-icon>
             <span class="label-appear">{{previousLevel.title}}</span>
         </span>
     </a>
     <a class="arrow arrow-right" *ngIf="nextLevel" [routerLink]="[ '/games', game.gameId, nextLevel.levelId ]">
         <span class="label">
             <span class="label-appear">{{nextLevel.title}}</span>
-            &gt;
+            <md-icon>chevron_right</md-icon>
         </span>
     </a>
     <div class="times">

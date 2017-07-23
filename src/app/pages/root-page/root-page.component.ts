@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener, ViewChild } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { MdSidenav } from '@angular/material';
 
 import { CrashData, CrashDataGameInfo } from 'app/core/services/crash-data/interfaces/crash-data.interface';
 
@@ -12,6 +13,10 @@ import { CrashData, CrashDataGameInfo } from 'app/core/services/crash-data/inter
 export class RootPageComponent implements OnInit {
     games: CrashDataGameInfo[] = [];
 
+    navMode = 'side';
+    navOpen = true;
+    @ViewChild('sidenav') sidenav: MdSidenav;
+
     constructor(
         private router: Router,
         private route: ActivatedRoute,
@@ -20,9 +25,34 @@ export class RootPageComponent implements OnInit {
     ngOnInit() {
         const crashData: CrashData = this.route.snapshot.data['crashData'];
         this.games = crashData.gameinfo;
+
+        if (window.innerWidth < 768) {
+            this.navMode = 'over';
+            setTimeout(() => {
+                this.sidenav.close();
+            }, 0);
+        }
     }
 
-    navigateTo(gameId: string) {
-        this.router.navigate(['games', gameId]);
+    closeSidebar() {
+        if (this.navMode === 'over') {
+            this.sidenav.close();
+        }
+    }
+
+    showSidebar() {
+        this.sidenav.open();
+    }
+
+    @HostListener('window:resize', ['$event'])
+    onResize(event) {
+        if (event.target.innerWidth < 768) {
+            this.navMode = 'over';
+            this.sidenav.close();
+        }
+        if (event.target.innerWidth >= 768) {
+           this.navMode = 'side';
+           this.sidenav.open();
+        }
     }
 }

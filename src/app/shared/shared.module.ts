@@ -8,6 +8,7 @@ import {
     MdToolbarModule,
     MdSidenavModule,
     MdCardModule,
+    MdIconModule,
 } from '@angular/material'
 
 // Components
@@ -27,6 +28,7 @@ import {
         MdToolbarModule,
         MdSidenavModule,
         MdCardModule,
+        MdIconModule,
     ],
     declarations: [
         // Components
@@ -51,6 +53,7 @@ import {
         MdToolbarModule,
         MdSidenavModule,
         MdCardModule,
+        MdIconModule,
     ]
 })
 export class SharedModule {}
