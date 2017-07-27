@@ -1,6 +1,6 @@
 
 <div *ngIf="!error;else error_content">
-    <a class="arrow arrow-left" *ngIf="previousLevel" [routerLink]="[ '/games', game.gameId, previousLevel.levelId ]">
+     <a class="arrow arrow-left" *ngIf="previousLevel" [routerLink]="[ '/games', game.gameId, previousLevel.levelId ]">
         <span class="label">
             <md-icon>chevron_left</md-icon>
             <span class="label-appear">{{previousLevel.title}}</span>
@@ -11,17 +11,29 @@
             <span class="label-appear">{{nextLevel.title}}</span>
             <md-icon>chevron_right</md-icon>
         </span>
-    </a>
+    </a> 
     <div class="times">
         <md-card>
             <md-card-title>{{level.title}}</md-card-title>
             <md-card-subtitle>
                 <a [routerLink]="[ '/games', game.gameId ]">{{game.title}} &ndash; {{section.title}}</a>
             </md-card-subtitle>
-            <ul>
-                <li>Sapphire: {{times.sapphire}}</li>
-                <li>Gold: {{times.gold}}</li>
-                <li>Platinum: {{times.platinum}}</li>
+            <ul class="times-list">
+                <li>
+                    <img src="/assets/sapphire-relic.png">
+                    <br>
+                    <span>{{times.sapphire}}</span>
+                </li>
+                <li>
+                    <img src="/assets/gold-relic.png">
+                    <br>
+                    <span>{{times.gold}}</span>
+                </li>
+                <li>
+                    <img src="/assets/platinum-relic.png">
+                    <br>
+                    <span>{{times.platinum}}</span>
+                </li>
             </ul>
             <div class="times-note" *ngIf="times.note">Note: {{times.note}}</div>
         </md-card>
