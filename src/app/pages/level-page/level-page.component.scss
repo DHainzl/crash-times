@@ -95,3 +95,28 @@
 md-card-subtitle a {
     color: inherit;
 }
+
+@media screen and (max-width: 767px) {
+    .times {
+        .times-list {
+            flex-direction: column;
+
+            li {
+                text-align: left;
+
+                img {
+                    height: 50px;
+                    width: auto;
+                }
+
+                br { display: none; }
+
+                span {
+                    position: relative;
+                    top: -21px;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
