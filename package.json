@@ -5,6 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "prebuild": "ng test --single-run",
     "build": "ng build --prod",
     "postbuild": "ts-node build/postbuild.ts",
     "test": "ng test",

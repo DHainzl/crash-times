@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener, ViewChild } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { MdSidenav } from '@angular/material';
 
 import { CrashData, CrashDataGameInfo } from 'app/core/services/crash-data/interfaces/crash-data.interface';
@@ -18,7 +18,6 @@ export class RootPageComponent implements OnInit {
     @ViewChild('sidenav') sidenav: MdSidenav;
 
     constructor(
-        private router: Router,
         private route: ActivatedRoute,
     ) { }
 

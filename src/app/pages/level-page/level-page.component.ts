@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 import {
     CrashData,
@@ -15,8 +15,8 @@ import {
     styleUrls: [ './level-page.component.scss' ],
 })
 export class LevelPageComponent implements OnInit {
-    private gameId: string;
-    private levelId: string;
+    gameId: string;
+    levelId: string;
     game: CrashDataGameInfo;
     section: CrashDataSectionInfo;
     level: CrashDataLevelInfo;
@@ -24,24 +24,18 @@ export class LevelPageComponent implements OnInit {
     nextLevel: CrashDataLevelInfo;
     times: CrashDataTimes;
 
-    error: string;
+    error = '';
 
     constructor(
-        private router: Router,
         private route: ActivatedRoute,
     ) {}
 
     ngOnInit() {
         this.route.params.subscribe(params => {
+            this.resetData();
+
             this.gameId = params['gameId'];
             this.levelId = params['levelId'];
-
-            this.game = undefined;
-            this.section = undefined;
-            this.level = undefined;
-            this.previousLevel = undefined;
-            this.nextLevel = undefined;
-            this.times = undefined;
 
             this.loadGameData();
         });
@@ -54,6 +48,7 @@ export class LevelPageComponent implements OnInit {
 
         if (game === undefined) {
             this.error = 'Cannot find game with id ' + this.gameId;
+            this.resetData();
             return;
         }
 
@@ -69,10 +64,21 @@ export class LevelPageComponent implements OnInit {
 
         if (this.level === undefined) {
             this.error = 'Cannot find level with id ' + this.levelId + ' in game ' + game.title;
+            this.resetData();
+            return;
         }
 
         this.game = game;
         this.times = crashData.times[this.game.gameId][this.section.sectionId][this.level.levelId];
+    }
+
+    private resetData() {
+        this.game = undefined;
+        this.section = undefined;
+        this.level = undefined;
+        this.previousLevel = undefined;
+        this.nextLevel = undefined;
+        this.times = undefined;
     }
 
     private flatten<T>(arr: T[][]): T[] {

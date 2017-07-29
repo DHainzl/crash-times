@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 import { CrashData, CrashDataGameInfo } from 'app/core/services/crash-data/interfaces/crash-data.interface';
 
@@ -9,13 +9,12 @@ import { CrashData, CrashDataGameInfo } from 'app/core/services/crash-data/inter
     styleUrls: [ './level-selector.component.scss' ]
 })
 export class LevelSelectorComponent implements OnInit {
-    private gameId: string;
-    private game: CrashDataGameInfo;
+    gameId: string;
+    game: CrashDataGameInfo;
 
-    error: string;
+    error = '';
 
     constructor(
-        private router: Router,
         private route: ActivatedRoute,
     ) {}
 
@@ -31,13 +30,11 @@ export class LevelSelectorComponent implements OnInit {
         const game = crashData.gameinfo.find(gameinfo => gameinfo.gameId === this.gameId);
 
         if (game === undefined) {
+            this.game = undefined;
             this.error = 'Cannot find game with id ' + this.gameId;
-            return;
+        } else {
+            this.game = game;
+            this.error = '';
         }
-        this.game = game;
-    }
-
-    navigateTo(levelId: string) {
-        this.router.navigate(['games', this.gameId, levelId]);
     }
 }
